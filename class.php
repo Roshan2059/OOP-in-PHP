@@ -4,8 +4,8 @@ class player{
     public $speed;
     public $running = false;
 
-    function setName($name){
-        $this->name = $name;
+    function setName($na){
+        $this->name = $na;
     }
 
     function getName(){
