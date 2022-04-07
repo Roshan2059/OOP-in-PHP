@@ -2,13 +2,14 @@
 class player{
     public $name;
     public $speed;
+    public $running = false;
 
-    function setName($nameee){
-        $this->name = $nameee;
+    function setName($name){
+        $this->name = $name;
     }
 
     function getName(){
-        return $this->name;
+        return "player1 name is: ".$this->name;
     }
 
     function setSpeed($sp){
@@ -17,6 +18,14 @@ class player{
 
     function getSpeed(){
         return "The speed of harry is: ".$this->speed;
+    }
+
+    function run(){
+        $this->running = true;
+    }
+
+    function stopRun(){
+        $this->running = false;
     }
 }
 
@@ -34,4 +43,5 @@ echo $player2->getName();
 echo "<br>";
 $player2->setSpeed('10kmph');
 echo $player2->getSpeed();
+echo "<br>";
 ?>
